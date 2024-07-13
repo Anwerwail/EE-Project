@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Platforms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Social Media Platforms</h1>
+        <div id="language-buttons">
+            <button onclick="switchLanguage('en')">English</button>
+            <button onclick="switchLanguage('fr')">Français</button>
+            <button onclick="switchLanguage('ar')">العربية</button>
+        </div>
+    </header>
+    <main>
+        <section id="facebook" class="platform-section">
+            <h2 data-lang-en="Facebook" data-lang-fr="Facebook" data-lang-ar="فيسبوك">Facebook</h2>
+            <img src="icons8-facebook-nouveau-50.png" alt="Facebook Logo" class="platform-logo">
+            <p data-lang-en="Facebook is a social networking site that makes it easy for you to connect and share with family and friends online." data-lang-fr="Facebook est un site de réseau social qui vous permet de vous connecter et de partager facilement avec votre famille et vos amis en ligne." data-lang-ar="فيسبوك هو موقع تواصل اجتماعي يتيح لك الاتصال والمشاركة بسهولة مع العائلة والأصدقاء عبر الإنترنت."></p>
+            <ul>
+                <li data-lang-en="Status updates and news feed" data-lang-fr="Mises à jour de statut et fil d'actualité" data-lang-ar="تحديثات الحالة وخلاصة الأخبار"></li>
+                <li data-lang-en="Photo and video sharing" data-lang-fr="Partage de photos et de vidéos" data-lang-ar="مشاركة الصور والفيديوهات"></li>
+                <li data-lang-en="Events and groups" data-lang-fr="Événements et groupes" data-lang-ar="الأحداث والمجموعات"></li>
+                <li data-lang-en="Pages for businesses and public figures" data-lang-fr="Pages pour les entreprises et les personnalités publiques" data-lang-ar="الصفحات للشركات والشخصيات العامة"></li>
+            </ul>
+            <button class="toggle-button" onclick="toggleSection('facebook-disadvantages')">Disadvantages</button>
+            <div id="facebook-disadvantages" class="hidden">
+                <h3 data-lang-en="Disadvantages" data-lang-fr="Inconvénients" data-lang-ar="العيوب"></h3>
+                <ul>
+                    <li data-lang-en="Privacy concerns and data security" data-lang-fr="Préoccupations en matière de confidentialité et de sécurité des données" data-lang-ar="مخاوف الخصوصية وأمان البيانات"></li>
+                    <li data-lang-en="Spread of misinformation" data-lang-fr="Propagation de la désinformation" data-lang-ar="انتشار المعلومات الخاطئة"></li>
+                    <li data-lang-en="Distraction from productive tasks" data-lang-fr="Distraction des tâches productives" data-lang-ar="التشتت عن المهام الإنتاجية"></li>
+                </ul>
+            </div>
+            <button class="toggle-button" onclick="toggleSection('facebook-tips')">Tips for Responsible Use</button>
+            <div id="facebook-tips" class="hidden">
+                <h3 data-lang-en="Tips for Responsible Use" data-lang-fr="Conseils pour une utilisation responsable" data-lang-ar="نصائح للاستخدام المسؤول"></h3>
+                <ul>
+                    <li data-lang-en="Review and adjust privacy settings regularly" data-lang-fr="Révisez et ajustez régulièrement les paramètres de confidentialité" data-lang-ar="راجع واضبط إعدادات الخصوصية بانتظام"></li>
+                    <li data-lang-en="Be critical of the information you encounter" data-lang-fr="Soyez critique envers les informations que vous rencontrez" data-lang-ar="كن ناقدًا للمعلومات التي تصادفها"></li>
+                    <li data-lang-en="Limit time spent on the platform" data-lang-fr="Limitez le temps passé sur la plateforme" data-lang-ar="حدد الوقت الذي تقضيه على المنصة"></li>
+                </ul>
+            </div>
+            <button class="toggle-button" onclick="toggleSection('facebook-addiction')">Avoiding Addiction</button>
+            <div id="facebook-addiction" class="hidden">
+                <h3 data-lang-en="Avoiding Addiction" data-lang-fr="Éviter la dépendance" data-lang-ar="تجنب الإدمان"></h3>
+                <ul>
+                    <li data-lang-en="Set boundaries and allocate specific times for Facebook usage" data-lang-fr="Fixez des limites et allouez des horaires spécifiques pour l'utilisation de Facebook" data-lang-ar="ضع حدودًا وخصص أوقاتًا محددة لاستخدام الفيسبوك"></li>
+                    <li data-lang-en="Engage in offline activities and hobbies" data-lang-fr="Participez à des activités et passe-temps hors ligne" data-lang-ar="شارك في الأنشطة والهوايات غير المتصلة بالإنترنت"></li>
+                    <li data-lang-en="Seek professional help if you experience addiction symptoms" data-lang-fr="Demandez de l'aide professionnelle si vous ressentez des symptômes de dépendance" data-lang-ar="اطلب المساعدة المهنية إذا شعرت بأعراض الإدمان"></li>
+                </ul>
+            </div>
+        </section>
+        <section id="instagram" class="platform-section">
+            <h2 data-lang-en="Instagram" data-lang-fr="Instagram" data-lang-ar="انستغرام">Instagram</h2>
+            <img src="icons8-instagram-50.png" alt="Instagram Logo" class="platform-logo">
+            <p data-lang-en="Instagram is a photo and video-sharing social networking platform. Its features include:" data-lang-fr="Instagram est une plateforme de partage de photos et de vidéos. Ses fonctionnalités incluent :" data-lang-ar="إنستغرام هو منصة للتواصل الاجتماعي لمشاركة الصور ومقاطع الفيديو. تشمل ميزاته:"></p>
+            <ul>
+                <li data-lang-en="Photo and video uploads" data-lang-fr="Téléchargement de photos et vidéos" data-lang-ar="تحميل الصور والفيديوهات"></li>
+                <li data-lang-en="Instagram Stories: temporary photo and video posts" data-lang-fr="Stories Instagram : publications temporaires de photos et vidéos" data-lang-ar="قصص إنستغرام: منشورات مؤقتة من الصور ومقاطع الفيديو"></li>
+                <li data-lang-en="Direct messaging" data-lang-fr="Messagerie directe" data-lang-ar="الرسائل المباشرة"></li>
+                <li data-lang-en="Instagram Reels: short-form video content" data-lang-fr="Reels Instagram : contenu vidéo de courte durée" data-lang-ar="ريلز إنستغرام: محتوى فيديو قصير"></li>
+                <li data-lang-en="IGTV: long-form video content" data-lang-fr="IGTV : contenu vidéo de longue durée" data-lang-ar="آي جي تي في: محتوى فيديو طويل"></li>
+                <li data-lang-en="Filters and editing tools for photos and videos" data-lang-fr="Filtres et outils d'édition pour photos et vidéos" data-lang-ar="فلاتر وأدوات تحرير الصور والفيديو"></li>
+                <li data-lang-en="Explore page for discovering new content" data-lang-fr="Page Explorer pour découvrir de nouveaux contenus" data-lang-ar="صفحة الاستكشاف لاكتشاف محتوى جديد"></li>
+            </ul>
+            <button class="toggle-button" onclick="toggleSection('instagram-disadvantages')">Disadvantages</button>
+            <div id="instagram-disadvantages" class="hidden">
+                <h3 data-lang-en="Disadvantages" data-lang-fr="Inconvénients" data-lang-ar="العيوب"></h3>
+                <ul>
+                    <li data-lang-en="Increased feelings of inadequacy due to curated content" data-lang-fr="Sentiments accrus d'inadéquation en raison du contenu sélectionné" data-lang-ar="زيادة مشاعر النقص بسبب المحتوى المنسق"></li>
+                    <li data-lang-en="Potential for negative body image due to comparison with others" data-lang-fr="Potentiel pour une image corporelle négative en raison de la comparaison avec les autres" data-lang-ar="إمكانية الحصول على صورة سلبية للجسم بسبب المقارنة مع الآخرين"></li>
+                    <li data-lang-en="Distraction from real-life experiences" data-lang-fr="Distraction des expériences de la vie réelle" data-lang-ar="التشتت عن التجارب الحقيقية"></li>
+                </ul>
+            </div>
+            <button class="toggle-button" onclick="toggleSection('instagram-tips')">Tips for Responsible Use</button>
+            <div id="instagram-tips" class="hidden">
+                <h3 data-lang-en="Tips for Responsible Use" data-lang-fr="Conseils pour une utilisation responsable" data-lang-ar="نصائح للاستخدام المسؤول"></h3>
+                <ul>
+                    <li data-lang-en="Limit time spent scrolling through the feed" data-lang-fr="Limitez le temps passé à faire défiler le fil d'actualité" data-lang-ar="حدد الوقت الذي تقضيه في التمرير عبر الخلاصة"></li>
+                    <li data-lang-en="Be mindful of who you follow and curate a positive feed" data-lang-fr="Soyez attentif à qui vous suivez et créez un fil d'actualité positif" data-lang-ar="كن حذرًا بشأن من تتابع وإنشاء موجز إيجابي"></li>
+                    <li data-lang-en="Use privacy settings to control who can see your posts" data-lang-fr="Utilisez les paramètres de confidentialité pour contrôler qui peut voir vos publications" data-lang-ar="استخدم إعدادات الخصوصية للتحكم في من يمكنه رؤية منشوراتك"></li>
+                </ul>
+            </div>
+            <button class="toggle-button" onclick="toggleSection('instagram-addiction')">Avoiding Addiction</button>
+            <div id="instagram-addiction" class="hidden">
+                <h3 data-lang-en="Avoiding Addiction" data-lang-fr="Éviter la dépendance" data-lang-ar="تجنب الإدمان"></h3>
+                <ul>
+                    <li data-lang-en="Set daily usage limits and stick to them" data-lang-fr="Fixez des limites d'utilisation quotidiennes et respectez-les" data-lang-ar="حدد حدود الاستخدام اليومية والتزم بها"></li>
+                    <li data-lang-en="Engage in offline activities to reduce screen time" data-lang-fr="Participez à des activités hors ligne pour réduire le temps d'écran" data-lang-ar="شارك في الأنشطة غير المتصلة بالإنترنت لتقليل وقت الشاشة"></li>
+                    <li data-lang-en="Seek help if you feel overwhelmed by social media" data-lang-fr="Demandez de l'aide si vous vous sentez submergé par les réseaux sociaux" data-lang-ar="اطلب المساعدة إذا شعرت بالإرهاق من وسائل التواصل الاجتماعي"></li>
+                </ul>
+            </div>
+        </section>
+        <section id="tiktok" class="platform-section">
+            <h2 data-lang-en="TikTok" data-lang-fr="TikTok" data-lang-ar="تيك توك">TikTok</h2>
+            <img src="icons8-tic-tac-60.png" alt="TikTok Logo" class="platform-logo">
+            <p data-lang-en="TikTok is a social media platform for creating, sharing, and discovering short music videos. Key features include:" data-lang-fr="TikTok est une plateforme de médias sociaux pour créer, partager et découvrir des vidéos musicales courtes. Les fonctionnalités clés incluent :" data-lang-ar="تيك توك هو منصة للتواصل الاجتماعي لإنشاء ومشاركة واكتشاف مقاطع الفيديو الموسيقية القصيرة. تشمل الميزات الرئيسية:"></p>
+            <ul>
+                <li data-lang-en="Short-form video creation and sharing" data-lang-fr="Création et partage de vidéos courtes" data-lang-ar="إنشاء ومشاركة مقاطع الفيديو القصيرة"></li>
+                <li data-lang-en="Wide variety of music and sound effects" data-lang-fr="Large variété de musique et d'effets sonores" data-lang-ar="مجموعة واسعة من الموسيقى والمؤثرات الصوتية"></li>
+                <li data-lang-en="Creative filters and editing tools" data-lang-fr="Filtres créatifs et outils d'édition" data-lang-ar="فلاتر إبداعية وأدوات تحرير"></li>
+                <li data-lang-en="Challenges and trending hashtags" data-lang-fr="Défis et hashtags tendance" data-lang-ar="التحديات والهاشتاجات الرائجة"></li>
+                <li data-lang-en="Personalized content feed based on user preferences" data-lang-fr="Fil de contenu personnalisé en fonction des préférences de l'utilisateur" data-lang-ar="موجز محتوى مخصص بناءً على تفضيلات المستخدم"></li>
+            </ul>
+            <button class="toggle-button" onclick="toggleSection('tiktok-disadvantages')">Disadvantages</button>
+            <div id="tiktok-disadvantages" class="hidden">
+                <h3 data-lang-en="Disadvantages" data-lang-fr="Inconvénients" data-lang-ar="العيوب"></h3>
+                <ul>
+                    <li data-lang-en="Potential exposure to inappropriate content" data-lang-fr="Exposition potentielle à un contenu inapproprié" data-lang-ar="التعرض المحتمل لمحتوى غير لائق"></li>
+                    <li data-lang-en="Addictive nature of the platform" data-lang-fr="Nature addictive de la plateforme" data-lang-ar="الطبيعة الإدمانية للمنصة"></li>
+                    <li data-lang-en="Privacy concerns" data-lang-fr="Préoccupations en matière de confidentialité" data-lang-ar="مخاوف الخصوصية"></li>
+                </ul>
+            </div>
+            <button class="toggle-button" onclick="toggleSection('tiktok-tips')">Tips for Responsible Use</button>
+            <div id="tiktok-tips" class="hidden">
+                <h3 data-lang-en="Tips for Responsible Use" data-lang-fr="Conseils pour une utilisation responsable" data-lang-ar="نصائح للاستخدام المسؤول"></h3>
+                <ul>
+                    <li data-lang-en="Be mindful of the content you create and share" data-lang-fr="Soyez attentif au contenu que vous créez et partagez" data-lang-ar="كن حذرًا بشأن المحتوى الذي تنشئه وتشاركه"></li>
+                    <li data-lang-en="Use privacy settings to control your audience" data-lang-fr="Utilisez les paramètres de confidentialité pour contrôler votre audience" data-lang-ar="استخدم إعدادات الخصوصية للتحكم في جمهورك"></li>
+                    <li data-lang-en="Take regular breaks and limit screen time" data-lang-fr="Prenez des pauses régulières et limitez le temps d'écran" data-lang-ar="خذ فترات راحة منتظمة وحدد وقت الشاشة"></li>
+                </ul>
+            </div>
+            <button class="toggle-button" onclick="toggleSection('tiktok-addiction')">Avoiding Addiction</button>
+            <div id="tiktok-addiction" class="hidden">
+                <h3 data-lang-en="Avoiding Addiction" data-lang-fr="Éviter la dépendance" data-lang-ar="تجنب الإدمان"></h3>
+                <ul>
+                    <li data-lang-en="Set usage limits and stick to them" data-lang-fr="Fixez des limites d'utilisation et respectez-les" data-lang-ar="حدد حدود الاستخدام والتزم بها"></li>
+                    <li data-lang-en="Engage in other activities and hobbies" data-lang-fr="Participez à d'autres activités et passe-temps" data-lang-ar="شارك في أنشطة وهوايات أخرى"></li>
+                    <li data-lang-en="Seek help if you feel you can't control your usage" data-lang-fr="Demandez de l'aide si vous sentez que vous ne pouvez pas contrôler votre utilisation" data-lang-ar="اطلب المساعدة إذا شعرت بعدم قدرتك على التحكم في استخدامك"></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Social Media Platforms. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
